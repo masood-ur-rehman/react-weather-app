@@ -12,7 +12,7 @@ class App extends React.Component {
         error: null,
     };
 
-    fetchUsers() {
+    fetchTemp() {
 
         const cities = [
             {"title":"Istanbul","location_type":"City","woeid":2344116,"latt_long":"41.040852,28.986179"},
@@ -40,20 +40,16 @@ class App extends React.Component {
 
 
     componentDidMount() {
-        this.fetchUsers();
+        this.fetchTemp();
     }
 
 
     render() {
-        const {isLoading, cities, error} = this.state;//cities
-        function handleChange(e) {
-            console.log(e.target.value);
-            
-        }
+        const {isLoading, cities, error} = this.state;
+
         return (
             <React.Fragment>
                 <h1>Temperature List</h1>
-                <input name="search" id="search" onChange={handleChange} />
                 {error ? <p>{error.message}</p> : null}
                 {!isLoading ? (
 
