@@ -1,3 +1,7 @@
+## Weather app
+
+Weather App is weather data aggregator that takes the weather predictions from MetaWeather.com.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
